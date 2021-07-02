@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #292C34;
+}
+
+header{
+    padding: 20px;
+    background-color: white;
+}
+
+header > h1{
+    color: #24272E;
+    text-align: center;
+    font-family: Asap,sans-serif;
+}
+
+.score-board{
+    border: 3px solid white;
+    width: 200px;
+    margin: 20px auto;
+    color: white;
+    font-size: 46px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: Asap,sans-serif;
+    position: relative;
+}
+
+.badges{
+    background: #E25840;
+    color: white;
+    font-size: 14px;
+    padding: 2px 10px;
+    border-radius: 3px;
+}
+
+#user-label{
+    background: #4094e2;
+    position: absolute;
+    top: 30px;
+    left: -23px;
+}
+#comp-label{
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+
+.result{
+    font-size: 40px;
+    color: white;
+}
+
+.result > p{
+    text-align: center;
+    font-family: Asap,sans-serif;
+    font-weight: bold;
+}
+
+.choices{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.choice{
+    display: inline-block;
+    margin-left: 30px;
+    padding: 30px;
+    color: white;
+}
+
+.choice img{
+    cursor: pointer;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+#s img{
+    height: 190px;
+    width: 180px;
+}
+
+#p img{
+    height: 190px;
+    width: 190px;
+}
+
+div + p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-family: Asap,sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    font-family: Asap,sans-serif;
+}
