@@ -3,13 +3,31 @@ let cpuScore = 0;
 let playerScore = 0;
 let result = "";
 
+// insta opening logic
 
+for (const elem of document.getElementsByClassName('open-insta'))
+{
+    elem.addEventListener('click', () =>
+    {
+        openlink('https://instagram.com/tanmaypatel0407', "_blank");
+    });
+}
+
+function openlink(url, target)
+{
+    window.open(url, target);
+}
+
+//Game logic starts here
+
+//Function to update score on DOM
 function updateScore()
 {
     userScore.innerHTML = playerScore;
     compScore.innerHTML = cpuScore;
 }
 
+//user's move choosing logic
 for (const elem of document.getElementsByClassName('choice'))
 {
     elem.addEventListener('click', () =>
@@ -20,8 +38,11 @@ for (const elem of document.getElementsByClassName('choice'))
     });
 }
 
+
+//Check the winner
 function checkWinner(userChoice, compChoice)
 {
+    //All conditions to check the winner
     if (userChoice === compChoice)
     {
         result = "The game was a draw try again";
